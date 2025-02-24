@@ -1,0 +1,8 @@
+# YOLOv8 data config
+train: C:/Users/suraa/OneDrive/Documents/Final Project/data/images/train
+val: C:/Users/suraa/OneDrive/Documents/Final Project/data/images/val
+test: C:/Users/suraa/OneDrive/Documents/Final Project/data/images/test
+
+# List of class names
+names:
+  0: face
