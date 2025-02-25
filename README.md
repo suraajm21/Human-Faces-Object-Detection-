@@ -161,7 +161,23 @@ Recall: Of all actual faces, how many did we detect.
 3. These numbers will vary depending on hyperparameters, training epochs, and data quality. But they demonstrate good detection performance.
 ```
 
-12. 
+12.  Potential Improvements and Future Work:
+```
+1. Higher Resolution: YOLOv8 usually does well with larger input sizes (e.g., 640×640). Larger images might improve detection of small or far-away faces.
+2. Hyperparameter Tuning: Adjusting learning rate, batch size, and mosaic augmentation settings.
+3. Real-time Optimization: If streaming from a webcam at high FPS, consider using the YOLOv8n (nano) model or pruning/quantization for better speed on low-power devices.
+4. Additional EDA: Showing sample images with bounding boxes, or highlight image resolution distribution pre/post-resize.
+```
+
+13. Conclusion:
+```
+This project demonstrates an end-to-end face detection pipeline using modern deep learning approaches (YOLOv8). It handles the full lifecycle—data ingestion, annotation processing, augmentation, training, validation, and interactive inference. With minimal modifications, it can be adapted for other object detection tasks or face recognition expansions.
+Key Achievements:
+* Streamlined data preprocessing with consistent bounding boxes.
+* Achieved strong performance metrics on a relatively modest dataset (~2204 images + augmentations).
+* Provided an interactive Streamlit interface for data analysis and real-time inference.
+By following the steps in this documentation, anyone can reproduce, evaluate, and extend the face detection solution in new environments or for additional use cases.
+```
 
 
 
